@@ -3,92 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" type="text/css" href="css/first.css">
+    <link rel="stylesheet"  href="style.css">
   </head>
   <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="http://placehold.it/150×100">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="./index.html">
+          <img src="http://placehold.it/150×100" alt="web-site logo">
         </a>
-      <ul class="site-navigation">
-      <li><a href="">ИНФОРМАЦИЯ</a></li>
-      <li><a href="">ФОТО ШТАТА</a></li> 
-      <li><a href="">КАРТА ШТАТА</a></li>
-      <li><a href="../hotels.html">ГОСТИНИЦА</a></li>
-      </ul>
+        <ul class="site-navigation">
+          <li><a href="#">информация</a></li>
+          <li><a href="#">фото штата</a></li>
+          <li><a href="#">карта штата</a></li>
+          <li><a href="./index.html">гостиницы</a></li>
+        </ul>
       </nav>
-      </header> 
-      <main class="container">
-        <h1 class="visually-hidden">критерии поиска</h1>
-        <section class="search">
-          
-          <!--Here should be forms-->
-        </section>
-        <div class="sorting">
-          <ul>
-            <li><a href="">ПО ЦЕНЕ</a></li>
-            <li><a href="">ПО ТИПУ</a></li>
-            <li><a href="">ПО РЕЙТИНГУ</a></li>
-          </ul>
-        </div>
-        <section class="housing">
-          <!--НЕ работает visually-hidden=((-->
-          <h2 class="visually-hidden">ВЫБОР ЖИЛЬЯ</h2>
-          <!--Не знаю нужно ли каждый отель обворачивать в дивы?-->
-          <div class="hotels">
-            <img src="http://placehold.it/150×100">
-            <h3 class="amara">
-             <a href="https://www.amararesort.com/">AMARA RESORT&SPA</a>
-            </h3>
-            <p>Гостиница от 4000 тыс р.</p>
-            </div>
-            <div class="buttons">
-                <input type="submit" value="Подробнее"> </input>
-                <input type="submit" value="Забронировать"> </input>
-            </div>
 
-            <div class="hotels">
-            <img src="http://placehold.it/150×100">
-            <h3 class="amara">
-             <a href="https://www.desertquailinn.com/">DESERT QUAIL INN</a>
-            </h3>
-            <p>Мотель от 3000 тыс р.</p>
-            </div>
-            <div class="buttons">
-                <input type="submit" value="Подробнее"> </input>
-                <input type="submit" value="Забронировать"> </input>
-            </div>
+      <!--Here should be forms-->
+    </section>
+    <div class="sorting">
+      <p>Сортировка:</p>
+      <ul>
+        <li><a href="#">по цене</a></li>
+        <li><a href="#">по типу</a></li>
+        <li><a href="#">по рейтингу</a></li>
+      </ul>
+    </div>
+    <ul class="arrows">
+      <li><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+      <li><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
+    </ul>
+    <article class="housing">
+      <!--НЕ работает visually-hidden=((-->
+      <h2 class="visually-hidden">выбор жилья</h2>
+      <div class="hotels">
+        <img src="http://placehold.it/150×100"  alt="hotel amara resort">
+        <h3 class="amara">
+          <a href="https://www.amararesort.com/">amara resort&spa</a>
+        </h3>
+        <p>Гостиница от 4000 тыс р.</p>
+      </div>
+      <div class="buttons">
+        <a href="#" class="details">Подробнее</a>
+        <input type="submit" value="Забронировать"> </input>
+      </div>
 
-            <div class="hotels">
-            <img src="http://placehold.it/150×100">
-            <h3 class="amara">
-             <a href="https://villasatpocodiablo.com//">VILLAS AT POCO DIABLO</a>
-            </h3>
-            <p>Апартаменты от 2000 тыс р.</p>
-            </div>
-            <div class="buttons">
-                <input type="submit" value="Подробнее"> </input>
-                <input type="submit" value="Забронировать"> </input>
-            </div>
-          </main>
-        </section>
-        <footer class="main-footer">
-            <p>#VISITSEDONA</p>
-            <div class="footer-social">
-              <ul>
-                <li><a class="social-button" href="#">Twitter</a></li>
-                <li><a class="social-button" href="#">Facebook</a></li>
-                <li><a class="social-button" href="#">Twitter</a></li>
-              </ul>
-              </div>
-              <p class="footer-copyright">
-                  <b>WEB SITE BY</b>
-                  <a class="footer-logo">
-                  <img src="img/index-logo.svg" alt="logo">
-                 </a>
-                </p>
-           </footer>
-          </body>
-         </html>
-      
+      <div class="hotels">
+        <img src="http://placehold.it/150×100"  alt="desert quail inn">
+        <h3 class="desert-quail">
+          <a href="https://www.desertquailinn.com/">desert quail inn</a>
+        </h3>
+        <p>Мотель от 3000 тыс р.</p>
+      </div>
+      <div class="buttons">
+        <a href="#" class="details">Подробнее </a>
+        <input type="submit" value="Забронировать"> </input>
+      </div>
+
+      <div class="hotels">
+        <img src="http://placehold.it/150×100"  alt="villas at poco diablo">
+        <h3 class="villas-diablo">
+          <a href="https://villasatpocodiablo.com//">villas at poco diablo</a>
+        </h3>
+        <p>Апартаменты от 2000 тыс р.</p>
+      </div>
+      <div class="buttons">
+        <a href="#" class="details">Подробнее </a>
+        <input type="submit" value="Забронировать"></input>
+      </div>
+    </article>
+  </main>
+  <footer class="main-footer">
+    <a href="#">#visitsedona</a>
+    <ul class="footer-social">
+      <li><a class="social-button" href="#">Twitter</a></li>
+      <li><a class="social-button" href="#">Facebook</a></li>
+      <li><a class="social-button" href="#">Twitter</a></li>
+    </ul>
+  </div>
+  <p class="footer-copyright">
+    <b>web site by</b>
+    <a class="footre-logo" href="./index.html">
+      <img src="img/index-logo.svg" alt="logo">
+    </a>
+  </p>
+</footer>
+</body>
+
+</html>
