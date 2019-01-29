@@ -1,93 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet"  href="style.css">
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a href="./index.html">
-          <img src="http://placehold.it/150×100" alt="web-site logo">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="#">информация</a></li>
-          <li><a href="#">фото штата</a></li>
-          <li><a href="#">карта штата</a></li>
-          <li><a href="./index.html">гостиницы</a></li>
-        </ul>
-      </nav>
-
-      <!--Here should be forms-->
-    </section>
-    <div class="sorting">
-      <p>Сортировка:</p>
-      <ul>
-        <li><a href="#">по цене</a></li>
-        <li><a href="#">по типу</a></li>
-        <li><a href="#">по рейтингу</a></li>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="index.html">
+        <img src="http://placehold.it/150×100" alt="web-site logo">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="#">информация</a></li>
+        <li><a href="#">фото штата</a></li>
+        <li><a href="#">карта штата</a></li>
+        <li><a>гостиницы</a></li>
       </ul>
-    </div>
-    <ul class="arrows">
-      <li><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
-      <li><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
-    </ul>
-    <article class="housing">
-      <!--НЕ работает visually-hidden=((-->
-      <h2 class="visually-hidden">выбор жилья</h2>
-      <div class="hotels">
-        <img src="http://placehold.it/150×100"  alt="hotel amara resort">
-        <h3 class="amara">
-          <a href="https://www.amararesort.com/">amara resort&spa</a>
-        </h3>
-        <p>Гостиница от 4000 тыс р.</p>
-      </div>
-      <div class="buttons">
-        <a href="#" class="details">Подробнее</a>
-        <input type="submit" value="Забронировать"> </input>
-      </div>
-
-      <div class="hotels">
-        <img src="http://placehold.it/150×100"  alt="desert quail inn">
-        <h3 class="desert-quail">
-          <a href="https://www.desertquailinn.com/">desert quail inn</a>
-        </h3>
-        <p>Мотель от 3000 тыс р.</p>
-      </div>
-      <div class="buttons">
-        <a href="#" class="details">Подробнее </a>
-        <input type="submit" value="Забронировать"> </input>
-      </div>
-
-      <div class="hotels">
-        <img src="http://placehold.it/150×100"  alt="villas at poco diablo">
-        <h3 class="villas-diablo">
-          <a href="https://villasatpocodiablo.com//">villas at poco diablo</a>
-        </h3>
-        <p>Апартаменты от 2000 тыс р.</p>
-      </div>
-      <div class="buttons">
-        <a href="#" class="details">Подробнее </a>
-        <input type="submit" value="Забронировать"></input>
-      </div>
-    </article>
-  </main>
-  <footer class="main-footer">
-    <a href="#">#visitsedona</a>
-    <ul class="footer-social">
-      <li><a class="social-button" href="#">Twitter</a></li>
-      <li><a class="social-button" href="#">Facebook</a></li>
-      <li><a class="social-button" href="#">Twitter</a></li>
+    </nav>
+  <section>
+    <!--Here should be forms-->
+  </section>
+  <div class="sorting">
+    <p>Сортировка:</p>
+    <ul>
+      <li><a href="#">по цене</a></li>
+      <li><a href="#">по типу</a></li>
+      <li><a href="#">по рейтингу</a></li>
     </ul>
   </div>
-  <p class="footer-copyright">
-    <b>web site by</b>
-    <a class="footre-logo" href="./index.html">
-      <img src="img/index-logo.svg" alt="logo">
-    </a>
-  </p>
+  <ul class="arrows">
+    <li><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+    <li><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
+  </ul>
+  </header>
+  <main class="hotels">
+  <!--НЕ работает visually-hidden=((-->
+  <h2 class="visually-hidden">выбор жилья</h2>
+  <article class="amara">
+    <img src="http://placehold.it/150×100"  alt="hotel amara resort">
+    <h3 class="amara">
+      <a href="https://www.amararesort.com/">amara resort&spa</a>
+    </h3>
+    <p>Гостиница от 4000 тыс р.</p>
+  <div class="buttons">
+    <a href="#" class="details">Подробнее</a>
+    <a href="#" class="booking">Забронировать </a>
+  </div>
+  <div class="ranking">
+    <p class="stars stars-4"><span class="visually-hidden">4 звезды</span></p>
+    <mark>Рейтинг: 8,5</mark>.
+  </div>
+  </article>
+
+  <article class="desertquailinn">
+    <img src="http://placehold.it/150×100"  alt="desert quail inn">
+    <h3 class="desert-quail">
+      <a href="https://www.desertquailinn.com/">desert quail inn</a>
+    </h3>
+    <p>Мотель от 3000 тыс р.</p>
+  <div class="buttons">
+    <a href="#" class="details">Подробнее </a>
+    <a href="#" class="booking">Забронировать </a>
+  </div>
+  <div class="ranking">
+    <p class="stars stars-3"><span class="visually-hidden">3 звезды</span></p>
+    <mark>Рейтинг: 8,9</mark>.
+  </div>
+  </article>
+
+  <article class="hotels">
+    <img src="http://placehold.it/150×100"  alt="villas at poco diablo">
+    <h3 class="villas-diablo">
+      <a href="https://villasatpocodiablo.com//">villas at poco diablo</a>
+    </h3>
+    <p>Апартаменты от 2000 тыс р.</p>
+  <div class="buttons">
+    <a href="#" class="details">Подробнее </a>
+    <a href="#" class="booking">Забронировать </a>
+  </div>
+  <div class="ranking">
+    <p class="stars stars-2"><span class="visually-hidden">2 звезды</span></p>
+    <mark>Рейтинг: 9,2</mark>.
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <a href="#">#visitsedona</a>
+  <ul class="footer-social">
+    <li><a class="social-button" href="#">Twitter</a></li>
+    <li><a class="social-button" href="#">Facebook</a></li>
+    <li><a class="social-button" href="#">Twitter</a></li>
+  </ul>
+<p class="footer-copyright">
+  <b>web site by</b>
+  <a class="footer-logo" href="https://htmlacademy.ru/">
+    <img src="img/index-logo.svg" alt="logo">
+  </a>
+</p>
 </footer>
 </body>
-
 </html>
