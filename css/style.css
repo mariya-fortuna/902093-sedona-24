@@ -1,0 +1,150 @@
+body {
+  width: 1280px;
+  height: 2762px;
+  font-family: PTSans;
+}
+
+.main-header {
+width: 773px;
+height: 1200px;
+}
+
+.main-navigation {
+
+}
+
+.site-navigation {
+    width: 93px;
+    height: 12px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    display: inline-block;
+
+}
+
+.main-header-logo {
+    width: 140px;
+    height: 71px;
+    position: 640px;
+    object-fit: contain;
+  }
+
+.main-photo {
+  .background-photo {
+    width: 2000px;
+    height: 800px;
+    object-fit: contain;
+}
+
+.title {
+  color: pink;
+}
+
+.polygon {
+  width: 1201px;
+  height: 59px;
+  object-fit: contain;
+}
+
+
+.visually {
+  .welcome {
+  width: 459px;
+  height: 353px;
+  object-fit: contain;
+position: absolute;
+}
+
+.container {
+
+}
+
+ .introduction {
+text-align: center;
+colo:red;
+ }
+
+.reason-5 {
+
+}
+
+.features {
+
+}
+
+.feature {
+
+}
+
+
+.sedona-view {
+width: 800px;
+height: 256px;
+flow: right;
+object-fit: contain;
+}
+
+span {
+
+}
+
+.icons {
+    width: 64px;
+    height: 76px;
+    object-fit: contain;
+}
+
+.recomendation {
+
+}
+
+.recomended-item {
+
+}
+
+.description {
+
+}
+
+.bridge {
+
+}
+
+h3 {
+
+}
+
+.about {
+
+}
+
+.about-sedona {
+
+}
+
+.interedt {
+
+}
+
+.main-footer {
+
+}
+
+.social-button {
+
+}
+
+.footer-copyright {
+
+}
+
+.footer-logo {
+
+}

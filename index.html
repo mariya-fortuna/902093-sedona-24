@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet"  href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="http://placehold.it/150×100" alt="web-site logo">
+        <img src="img/logo.png" alt="logo">
       </a>
       <ul class="site-navigation">
         <li><a href="#">информация</a></li>
@@ -18,8 +18,11 @@
         <li><a href="inner.html">гостиницы</a></li>
       </ul>
     </nav>
-    <div class="visually hidden">
+    <img class="main-photo" src="img/main.jpg" alt="nature of Sedona">
+    <img class="polygon" src="img/polygon.png" alt="polygon">
+    <div class="visually-hidden">
       <p>Welcome to the gorgeous Sedona</p>
+      <h1 class="title">Sedona</h1>
       <p>"Because the grand canyon sucks"</p>
     </div>
   </header>
@@ -27,7 +30,7 @@
   <main class="container">
     <div class="introduction">
       <h2>Седона-небольшой городок в Аризоне,заслуживающий  большего</h2>
-      <p class="uppercase">Расмотрим 5 причин по которым Седона круче чем гранд каньон</p>
+      <p class="reason-5">Расмотрим 5 причин по которым Седона круче чем гранд каньон</p>
     </div>
 
     <section class="features">
@@ -35,9 +38,13 @@
         <h3>Настоящий городок</h3>
         <span>— №1 —</span>
         <p>Седона не атракцион для туристов, там течет своя жизнь</p>
-        <img class="sedona" src="http://placehold.it/150×100" alt="hotel in sedona">
+        <img class="sedona-view" src="img/hotel.jpg" alt="hotel in sedona">
       </div>
-
+      <div class="icons">
+        <img src="img/icon-1.png" alt="house">
+        <img src="img/icon-2.png" alt="burger">
+        <img src="img/icon-3.png" alt="gift">
+      </div>
       <ul class="recomendation">
         <li class="recomended-item">
           <h3>Жилье</h3>
@@ -56,7 +63,7 @@
       </ul>
 
       <div class="description">
-        <img src="http://placehold.it/150×100" alt="diablo bridge">
+        <img class="bridge" src="img/photo-2.jpg" alt="diablo bridge">
         <h3>Там есть мост дьявола</h3>
         <span>— №2 —</span>
         <p>Да по нему можно пройтись, если конечно вы осмелитесь</p>
@@ -96,11 +103,10 @@
     </ul>
     <p class="footer-copyright">
       <b>web site by</b>
-      <a class="footer-logo">
-        <img src="img/index-logo.svg" alt="logo">
+      <a class="footer-logo" href="https://htmlacademy.ru/">
+        <img src="img/logo-name.png" alt="logo">
       </a>
     </p>
   </footer>
 </body>
-
 </html>
