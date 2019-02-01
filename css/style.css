@@ -1,21 +1,88 @@
 body {
   width: 1280px;
+  margin: 0 0 40px 40px;
+  background-color: #f2f3f3;
   font-family: "PT Sans, Arial, sans-serif;"
 }
 
+.main-navigation {
+
+}
+
+.site-navigation {
+  border: 1px solid white;
+  background-color: white;
+  position: absolute;
+  top:0;
+}
+
+.site-navigation li {
+  display: inline-block;
+}
+
+/* лого вообше не слушает команд стоит на месте не ценруется и прячется под панелью меню*/
+.main-header-logo {
+width: 100%;
+height: 71px;
+text-align: center;
+
+}
+
+/* svg не видит! что то делаю не так!!!!!  */
 .main-header {
-  background-image: url(img/main.jpg);
-  background-repeat: no-repeat;
+  width: 1200px;
+  height: 773px;
+  background:
+  url("../img/main.jpg")no-repeat,
+  url("../img/intro-mask.svg") no-repeat,
+  url("../intro-welcome.svg") no-repeat;
 }
 
-.container {
-
+.visually {
+height: 200px;
+width: 200px;
+position: relative;
+margin: 0 auto;
 }
 
-.icons {
-  background-image: url(img/icon-1.svg);
+.introduction {
+text-align: center;
 }
 
 .feature {
-  background-image: url(img/hotel.jpg)no-repeat right;
+width: 400px;
+height: 256px;
+border: 1px solid none;
+color: white;
+background-color: #82b5d3;
+text-align: center;
+float:left;
+}
+
+.recomended-items {
+  display: inline-block;
+}
+
+/*опять с свг проблема */
+.icons {
+  background-image:
+   url("../img/icon-1.svg")no-repeat,
+   url("../img/icon-2.svg")no-repeat,
+   url("../img/icon-3.svg")no-repeat;
+}
+
+.description {
+  width: 400px;
+  height: 256px;
+  border: 1px solid none;
+  color: white;
+  background-color: #82b5d3;
+  text-align: center;
+  float: right;
+}
+
+ .benefits .about-sedona {
+  display: inline-block;
+  list-style-type: none;
+
 }
