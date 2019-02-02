@@ -9,17 +9,6 @@ body {
 
 }
 
-.site-navigation {
-  border: 1px solid white;
-  background-color: white;
-  position: absolute;
-  top:0;
-}
-
-.site-navigation li {
-  display: inline-block;
-}
-
 /* лого вообше не слушает команд стоит на месте не ценруется и прячется под панелью меню*/
 .main-header-logo {
 width: 100%;
@@ -28,22 +17,15 @@ text-align: center;
 
 }
 
-/* svg не видит! что то делаю не так!!!!!  */
 .main-header {
   width: 1200px;
   height: 773px;
   background:
-  url("../img/main.jpg")no-repeat,
+  url("../img/intro-welcome.svg") no-repeat ,
   url("../img/intro-mask.svg") no-repeat,
-  url("../intro-welcome.svg") no-repeat;
+  url("../img/main.jpg")no-repeat;
 }
 
-.visually {
-height: 200px;
-width: 200px;
-position: relative;
-margin: 0 auto;
-}
 
 .introduction {
 text-align: center;
