@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet"  href="">
+  <link rel="stylesheet"  href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -21,30 +21,34 @@
     <section class="forms">
       <h1 class="visually-hidden">Фильтры поиска</h1>
       <form class="criteria" action="https://echo.htmlacademy.ru" method="get">
-        <p>Инфраструктура:</p>
+      <fieldset>
+        <legend>Инфраструктура</legend>
         <ul class="Infrastructure">
           <li class="filter-option">
-            <input type="checkbox" id="pool" name="Бассейн" checked>
+            <input type="checkbox" id="pool" name="pool" checked>
             <label for="pool"> Бассейн</label>
           <li class="filter-option">
-            <input type="checkbox" id="parking" name="Бассейн">
+            <input type="checkbox" id="parking" name="parking">
             <label for="parking"> Парковка</label>
           <li class="filter-option">
-            <input type="checkbox" id="wi-fi" name="Бассейн">
+            <input type="checkbox" id="wi-fi" name="wi-fi">
             <label for="wi-fi"> wi-fi</label>
         </ul>
-        <p>Тип жилья</p>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья</legend>
         <ul class="type-of-housing">
           <li class="filter-option">
-            <input type="checkbox" id="hotel" name="Бассейн" checked>
+            <input type="checkbox" id="hotel" name="hotel" checked>
             <label for="hotel"> Гостиница</label>
           <li class="filter-option">
-            <input type="checkbox" id="motel" name="Бассейн" checked>
+            <input type="checkbox" id="motel" name="pool" checked>
             <label for="motel"> Мотель</label>
           <li class="filter-option">
-            <input type="checkbox" id="appartaments" name="Бассейн" checked>
+            <input type="checkbox" id="appartaments" name="appartaments" checked>
             <label for="appartaments"> Аппартаменты</label>
         </ul>
+      </fieldset>
     </form>
       </section>
       <div class="sorting">
@@ -113,9 +117,9 @@
     <footer class="footer">
       <a href="#">#visitsedona</a>
       <ul class="footer-social">
-        <li><a class="twitter" href="#" aria-label="Седона в твиттере"></a></li>
-        <li><a class="facebook" href="#" aria-label="Седона на фейсбуке"   ></a></li>
-        <li><a class="youtube" href="#" aria-label="Седона на Ютубе"></a></li>
+        <li><a class="twitter" href="#"><span class="visually-hidden">Седона в твиттере</span></a></li>
+        <li><a class="facebook" href="#"><span class="visually-hidden">Седона на фейсбуке</span></a></li>
+        <li><a class="youtube" href="#"><span class="visually-hidden">Седона на Ютубе</span></a></li>
       </ul>
       <p class="footer-copyright">
         <b>web site by</b>
