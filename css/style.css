@@ -1,70 +1,155 @@
 body {
-  width: 1280px;
-  margin: 0 0 40px 40px;
-  background-color: #f2f3f3;
-  font-family: "PT Sans, Arial, sans-serif;"
+  margin: 0;
+  padding: 0;
+
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-logo {
+  padding-left: 569px;
 }
 
 .main-navigation {
+ font-size: inherit;
+ line-height: inherit;
+ font-weight: bold;
 
+ background-color: #ffffff;
+ color: #ffffff;
 }
 
-/* лого вообше не слушает команд стоит на месте не ценруется и прячется под панелью меню*/
-.main-header-logo {
-width: 100%;
-height: 71px;
-text-align: center;
-
-}
-
-.main-header {
-  width: 1200px;
-  height: 773px;
-  background:
-  url("../img/intro-welcome.svg") no-repeat ,
-  url("../img/intro-mask.svg") no-repeat,
-  url("../img/main.jpg")no-repeat;
-}
-
-
-.introduction {
-text-align: center;
-}
-
-.feature {
-width: 400px;
-height: 256px;
-border: 1px solid none;
-color: white;
-background-color: #82b5d3;
-text-align: center;
-float:left;
-}
-
-.recomended-items {
+.main-navigation li {
+  width: 239px;
+  height: 56px;
   display: inline-block;
 }
 
-/*опять с свг проблема */
+.main-header {
+ width: 100%;
+ height: 800px;
+ background-image:
+ url("../img/intro-welcome.svg"),
+ url("../img/intro-mask.svg"),
+ url("../img/main.jpg");
+ background-size:
+ 456px 353px,
+ 1201px 59px,
+ 1200px 800px;
+ background-repeat:
+ no-repeat,
+ no-repeat,
+ no-repeat;
+ background-position:
+ center,
+ bottom,
+ ;
+}
+
+.site-menu {
+list-style: none;
+}
+
+.site-menu a {
+  color: #000000;
+}
+
+.site-menu a:hover,
+.site-menu a:focus {
+  background-color: #e5f1fa;
+}
+
+.introduction {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.reason-5 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.features {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.about-sedona {
+  list-style: none;
+}
+
+.features h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.interest p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.recomendation {
+  background-color: #eeeeef;
+}
+
+.recomendation li {
+  display: inline-block;
+  padding: 50px 69px 64px;
+}
+
+.recomended-item {
+  list-style: none;
+}
+
+.interest h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: inherit;
+
+}
+.main-footer {
+  width: 1200px;
+  height: 120px;
+  text-align: center;
+}
+.footer-copyright b {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.footer-logo a:hover,
+.footer-logo a:focus;{
+  background-color:
+}
+
+.footer-social li {
+  list-style: none;
+}
+
+
 .icons {
   background-image:
    url("../img/icon-1.svg")no-repeat,
    url("../img/icon-2.svg")no-repeat,
    url("../img/icon-3.svg")no-repeat;
-}
-
-.description {
-  width: 400px;
-  height: 256px;
-  border: 1px solid none;
-  color: white;
-  background-color: #82b5d3;
-  text-align: center;
-  float: right;
-}
-
- .benefits .about-sedona {
-  display: inline-block;
-  list-style-type: none;
-
 }
