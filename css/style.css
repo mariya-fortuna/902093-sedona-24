@@ -86,6 +86,7 @@ list-style: none;
 /*почему применяется и к <ol> и <ul> я хочу применить только к <ol>*/
 .features-item li:nth-child(-n+2){
 background-color: #82b4d3;
+color: #ffffff;
 }
 
 .recomendation {
