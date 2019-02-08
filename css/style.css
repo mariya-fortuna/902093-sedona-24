@@ -12,6 +12,19 @@ body {
   background-color: #ffffff;
 }
 
+.inner.page  {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+
+}
+
+.inner-page li {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
 a {
   text-decoration: none;
 }
