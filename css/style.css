@@ -6,44 +6,40 @@ body {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
-  line-height: 26px;
+  line-height: 1.8;
   text-transform: uppercase;
-
-  background-color: #ffffff;
-}
-
-.inner.page  {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: bold;
-
-}
-
-.inner-page li {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
 }
 
 a {
   text-decoration: none;
 }
 
-.main-logo {
-  padding-left: 569px;
-}
 
 .main-navigation {
- font-size: inherit;
- line-height: inherit;
+ position: relative;
  font-weight: bold;
 
- background-color: #ffffff;
  color: #ffffff;
 }
 
-/*
+.main-logo {
+  width: 140px;
+  height: 72px;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  right: 0;
+  left: 0;
+}
+
+.site-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-header {
+width: 1200px;
+ min-height: 500px;
  background-image:
  url("../img/intro-welcome.svg"),
  url("../img/intro-mask.svg"),
@@ -59,7 +55,7 @@ a {
  background-position:
  center,
  bottom;
-}*/
+}
 
 .site-menu {
 list-style: none;
@@ -74,16 +70,22 @@ list-style: none;
   background-color: #e5f1fa;
 }
 
-.introduction {
+.introduction,
+.hashtag  {
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 1.23;
 }
 
 .intro-item {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   font-weight: normal;
+}
+
+.filled-text {
+  background-color: #82b4d3;
+  color: #fff;
 }
 
 .about-sedona {
@@ -92,14 +94,8 @@ list-style: none;
 
 .features h3 {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 1.5;
   font-weight: bold;
-}
-
-/*почему применяется и к <ol> и <ul> я хочу применить только к <ol>*/
-.features-item li:nth-child(-n+2){
-background-color: #82b4d3;
-color: #ffffff;
 }
 
 .recomendation {
@@ -112,26 +108,20 @@ color: #ffffff;
 
 .interest h3 {
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   font-weight: bold;
 }
 
 .interest p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
 }
 
-.hashtag {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color: inherit;
+.footer-social a:hover,
+.footer-social a:focus {
+
 }
 
-.footer-logo a:hover,
-.footer-logo a:focus;{
-  background-color:
-}
 
 .footer-social li {
   list-style: none;
@@ -145,3 +135,43 @@ color: #ffffff;
    url("../img/icon-3.svg")no-repeat;
 }
 */
+
+
+.second-header {
+  background-image: url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  min-height: 500px;
+}
+
+.option {
+  background-size: 16px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+.filter-option,
+p,
+mark {
+  background-size: 14px;
+  line-height: 1.5;
+}
+
+.sort-type {
+  background-size: 12px;
+  line-height: 1.5;
+}
+
+.hotels a, {
+color: #000000;
+}
+
+.details {
+background-color: #82b4d3;
+color: #000000;
+}
+
+.booking {
+background-color: #776356;
+color: #000000;
+}

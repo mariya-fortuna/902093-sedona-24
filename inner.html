@@ -6,12 +6,12 @@
   <link rel="stylesheet"  href="css/style.css">
 </head>
 <body>
-  <header class="main-header">
+  <header class="second-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
+      <a class="main-logo" href="index.html">
         <img src="img/logo.png" width="100" height="100"  alt="Логотип сайта Седона">
       </a>
-      <ul class="site-navigation">
+      <ul class="site-menu">
         <li><a href="#">информация</a></li>
         <li><a href="#">фото штата</a></li>
         <li><a href="#">карта штата</a></li>
@@ -22,7 +22,7 @@
       <h1 class="visually-hidden">Фильтры поиска</h1>
       <form class="criteria" action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
-        <legend>Инфраструктура</legend>
+        <legend class="option">Инфраструктура</legend>
         <ul class="Infrastructure">
           <li class="filter-option">
             <input type="checkbox" id="pool" name="pool" checked>
@@ -36,7 +36,7 @@
         </ul>
       </fieldset>
       <fieldset>
-        <legend>Тип жилья</legend>
+        <legend class="option">Тип жилья</legend>
         <ul class="type-of-housing">
           <li class="filter-option">
             <input type="checkbox" id="hotel" name="hotel" checked>
@@ -51,6 +51,8 @@
       </fieldset>
     </form>
       </section>
+    </header>
+    <main>
       <div class="sort-type">
         <p>Сортировка:</p>
         <ul>
@@ -63,8 +65,7 @@
         <li><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
         <li><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
       </ul>
-    </header>
-    <main class="hotels">
+    <section class="hotels">
       <h2 class="visually-hidden">выбор жилья</h2>
       <article class="amara">
         <img src="img/amara.jpg"  alt="отель amara resort" width="135" height="90">
@@ -115,7 +116,7 @@
       </article>
     </main>
     <footer class="footer">
-      <a href="#">#visitsedona</a>
+      <a class="hashtag" href="#">#visitsedona</a>
       <ul class="footer-social">
         <li><a class="twitter" href="#"><span class="visually-hidden">Седона в твиттере</span></a></li>
         <li><a class="facebook" href="#"><span class="visually-hidden">Седона на фейсбуке</span></a></li>
