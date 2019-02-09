@@ -90,6 +90,14 @@ list-style: none;
 
 .about-sedona {
   list-style: none;
+  background-color: #eeeeef;
+
+}
+
+.about-sedona,
+.filled-text {
+  width: 400px;
+  text-align: center;
 }
 
 .features h3 {
@@ -98,12 +106,15 @@ list-style: none;
   font-weight: bold;
 }
 
-.recomendation {
-  background-color: #eeeeef;
+.recomended-item {
+  width: 1200px;
+  list-style: none;
+  text-align: center;
 }
 
-.recomended-item {
-  list-style: none;
+.view,
+.bridge {
+  width: 800px;
 }
 
 .interest h3 {
