@@ -1,12 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "PTSans", Arial, sans-serif;
+  width: 1200px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.8;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -38,7 +36,6 @@ a {
 }
 
 .main-header {
-width: 1200px;
  min-height: 500px;
  background-image:
  url("../img/intro-welcome.svg"),
@@ -70,17 +67,18 @@ list-style: none;
   background-color: #e5f1fa;
 }
 
-.introduction,
+.nav-link[href]:hover {
+}
+
+.nav-link[href]:active {
+ ...
+}
+
+.introduction h2,
 .hashtag  {
   font-size: 21px;
   font-weight: bold;
   line-height: 1.23;
-}
-
-.intro-item {
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: normal;
 }
 
 .filled-text {
@@ -102,12 +100,10 @@ list-style: none;
 
 .features h3 {
   font-size: 21px;
-  line-height: 1.5;
   font-weight: bold;
 }
 
 .recomended-item {
-  width: 1200px;
   list-style: none;
   text-align: center;
 }
@@ -124,7 +120,6 @@ list-style: none;
 }
 
 .interest p {
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -140,7 +135,7 @@ list-style: none;
 
 /*
 .icons {
-  background-image:
+  background:
    url("../img/icon-1.svg")no-repeat,
    url("../img/icon-2.svg")no-repeat,
    url("../img/icon-3.svg")no-repeat;
@@ -161,16 +156,8 @@ list-style: none;
   font-weight: bold;
 }
 
-.filter-option,
-p,
-mark {
-  background-size: 14px;
-  line-height: 1.5;
-}
-
 .sort-type {
   background-size: 12px;
-  line-height: 1.5;
 }
 
 .hotels a, {
