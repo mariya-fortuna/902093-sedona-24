@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="inner-page">
+  <div class="container">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-logo">
         <img src="img/logo.png" width="140" height="71"  alt="logo">
       </a>
-      <ul class="site-menu">
+      <ul class="nav-list">
         <li><a href="#">информация</a></li>
         <li><a href="#">фото штата</a></li>
         <li><a href="#">карта штата</a></li>
@@ -19,7 +21,7 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main class="contant">
 
     <div class="introduction">
       <h2>Седона-небольшой городок в Аризоне,заслуживающий  большего</h2>
@@ -81,16 +83,13 @@
         <h2>Поиск гостиницы в седоне</h2>
         <form class="hotel-search" action="https://echo.htmlacademy.ru" method="get">
          <label for="check-in">Дата заезда</label>
-         <input type="text" id="check-in" name="datein" value="24 апреля 2017">
+         <input type="text" id="check-in" name="datein" placeholder="24 апреля 2017">
          <label for="check-out">Дата заезда</label>
-         <input type="text" id="check-out" name="dateout" value="4 июля 2017">
-        <label for="">Взрослые</label>
-        <input type="number" value="2" min="0" max="100">
-        <label for=""> Дети</label>
-        <input type="number" min="0" max="100">
-        <button class="enter" type="submit">Найти</button>
-          <button class="modal-close" type="button">Закрыть
-          </button>
+         <input type="text" id="check-out" name="dateout" placeholder="4 июля 2017">
+        <label for="adult">Взрослые</label>
+        <input type="number" name="adult" placeholder="2" min="0" max="100">
+        <label for="child"> Дети</label>
+        <input type="number" name="child" min="0" max="100">
         </form>
       </section>
       <img src="img/map.jpg" alt="карта седоны" width="1200" height="593">
@@ -110,6 +109,7 @@
         <img src="img/logo-name.png" alt="logo">
       </a>
     </p>
+  </div>
   </footer>
 </body>
 </html>
