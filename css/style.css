@@ -21,7 +21,6 @@ a {
 .main-navigation {
  position: relative;
  font-weight: bold;
-
  color: #ffffff;
 }
 
@@ -33,12 +32,6 @@ a {
   margin-left: auto;
   right: 0;
   left: 0;
-}
-
-.nav-list {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
 }
 
 .main-header {
@@ -63,33 +56,41 @@ a {
 .nav-list a,
 .site-menu a{
   color: #000000;
+  padding-top: 22px;
 }
-
 
 .nav-list {
-list-style: none;
+  padding-bottom: 22px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #fff;
 }
 
-
 .nav-item a[href]:hover {
-  background-color: #e5f1fa;
-  text-decoration: underline;
+  color: #e5f1fa;
 }
 
 .nav-item a[href]:active {
- background-color: yellow;
+ color: #d3d3d3;
 }
 
-.nav-item a:not([href]) {
-  color: brown;
+ a:not([href]) {
+  color: #8a7a6f;;
   font-weight: 700;
 }
 
-.introduction h2,
-.hashtag  {
+.introduction {
+  text-align: center;
+}
+
+.introduction h2  {
   font-size: 21px;
   font-weight: bold;
   line-height: 1.23;
+  padding-top: 61px;
+  padding-bottom: 38px;
 }
 
 .filled-text {
@@ -118,9 +119,21 @@ list-style: none;
   list-style: none;
 }
 
+
+.recomendation {
+  background:
+   url("../img/icon-1.svg") no-repeat,
+   url("../img/icon-2.svg") no-repeat,
+   url("../img/icon-3.svg") no-repeat;
+}
+
 .view,
 .bridge {
   width: 800px;
+}
+
+.interest {
+  margin-top: 57px;
 }
 
 .interest h3 {
@@ -132,25 +145,46 @@ list-style: none;
 
 .interest p {
   line-height: 1.71;
+  text-align: center;
 }
 
-.footer-social a:hover,
-.footer-social a:focus {
-
+.main-footer {
+margin-top: 138px;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hashtag  {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.23;
+  color: #000;
+
+  width: 136px;
+  padding-top: 51px;
+}
 
 .footer-social li {
   list-style: none;
 }
 
+.footer-social a {
 
-.recomendation {
-  background:
-   url("../img/icon-1.svg") no-repeat,
-   url("../img/icon-2.svg") no-repeat,
-   url("../img/icon-3.svg") no-repeat;
 }
+
+.footer-social li {
+  width: 150px;
+  background:
+  url("../img/twitter.svg") no-repeat,
+  url("../img/facebook.svg") no-repeat,
+  url("../img/youtube.svg") no-repeat;
+  background-size: 15px 12px;
+  background-color: #82b5d3;
+}
+
 
 
 .second-header {
@@ -161,6 +195,10 @@ list-style: none;
   min-height: 500px;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 .forms {
   color: #fff;
 }
@@ -169,13 +207,13 @@ list-style: none;
   font-weight: bold;
 }
 
-.Infrastructure,
+.infrastructure,
 .type-of-housing {
   list-style: none;
 }
 
- a:hover,
- a:active{
+ a[href]:hover,
+ a[href]:active{
   color: #b3d0e2;
 }
 
@@ -183,7 +221,7 @@ list-style: none;
   background-color: pink;
 }
 
-.sorting  {
+.sorting {
   list-style: none;
   display: inline-block;
 
@@ -194,33 +232,28 @@ list-style: none;
 }
 
 .sorting a{
-  color: #b2d1e3;
-  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #b2d1e3;
 
+  font-size: 12px;
+  padding-top: 41px;
   margin-left: 33px;
   margin-right: 33px;
 }
 
 .sorting a:hover {
-  color: rgba(0, 0, 0, 0.3);
-  text-decoration: underline;
-  text-decoration-color: #b2d1e3;
-  text-decoration-style: dotted;
+  color: #82b5d3;
+  border-bottom: 1px dotted #b2d1e3;
 }
 
 .sorting a:active {
-  color:rgba(0, 0, 0, 0.3);
-  text-decoration: none;
+  color:#000;
 }
 
 .option {
   background-size: 16px;
   line-height: 1.3;
   font-weight: bold;
-}
-
-.hotels a, {
-color: #000000;
 }
 
 .details {
@@ -233,10 +266,16 @@ background-color: #776356;
 color: #000000;
 }
 
-.show-result {
+.result-button {
   color: #fff;
+  background-color: transparent;
   border: 1px solid white;
   width: 133px;
+}
+
+.result-button:hover {
+  color: #000;
+  background-color: #fff;
 }
 
 .amara,

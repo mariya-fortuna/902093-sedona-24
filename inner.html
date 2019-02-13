@@ -17,15 +17,15 @@
         <li class="nav-item"><a href="#">информация</a></li>
         <li class="nav-item"><a href="#">фото штата</a></li>
         <li class="nav-item"><a href="#">карта штата</a></li>
-        <li class="nav-item"><a class="">гостиницы</a></li>
+        <li><a>гостиницы</a></li>
       </ul>
     </nav>
     <section class="forms">
       <h1 class="visually-hidden">Фильтры поиска</h1>
-      <form class="criteria" action="https://echo.htmlacademy.ru" method="get">
+      <form class="form-items" action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
         <legend class="option">Инфраструктура</legend>
-        <ul class="Infrastructure">
+        <ul class="infrastructure">
           <li class="filter-option">
             <input type="checkbox" id="pool" name="pool" checked>
             <label for="pool"> Бассейн</label>
@@ -51,10 +51,10 @@
             <label for="appartaments"> Аппартаменты</label>
         </ul>
       </fieldset>
-    </form>
     <p class="price">Стоимость в сутки(р)</p>
     <input type="range" min="0" max="3000" />
-    <a class="show-result" href="#">Показать</a>
+    <button class="result-button" type="submit" name="show-results">Показать</button>
+      </form>
       </section>
     </header>
     <main class="main-content">
