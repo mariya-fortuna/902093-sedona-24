@@ -150,11 +150,12 @@ a {
 
 .main-footer {
 margin-top: 138px;
+background-color: rgb(249, 251, 246);
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .hashtag  {
@@ -164,25 +165,25 @@ margin-top: 138px;
   color: #000;
 
   width: 136px;
-  padding-top: 51px;
 }
 
-.footer-social li {
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
+
 }
 
 .footer-social a {
-
-}
-
-.footer-social li {
   width: 150px;
   background:
   url("../img/twitter.svg") no-repeat,
   url("../img/facebook.svg") no-repeat,
   url("../img/youtube.svg") no-repeat;
-  background-size: 15px 12px;
+  background-size: 17px 15px;
   background-color: #82b5d3;
+
 }
 
 
@@ -221,6 +222,10 @@ margin-top: 138px;
   background-color: pink;
 }
 
+.hotels {
+  margin-left: 72px;
+}
+
 .sorting {
   list-style: none;
   display: inline-block;
@@ -229,6 +234,7 @@ margin-top: 138px;
 
 .sort-type p {
   font-size: 12px;
+  margin-left: 72px;
 }
 
 .sorting a{
@@ -278,13 +284,20 @@ color: #000000;
   background-color: #fff;
 }
 
+.hotels a {
+  color: #000;
+}
+
+.hotels {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
 .amara,
 .desertquailinn,
 .villas {
   background-image: url("../img/invalid-name.svg");
   background-repeat: no-repeat;
-}
 
-.hotels a {
-  color: #000;
 }
