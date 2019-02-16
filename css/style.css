@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,13 +23,37 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid red;
+}
 
 .main-navigation {
- position: relative;
- font-weight: bold;
- color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-height: 56px;
+
+  position: relative;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .main-logo {
@@ -34,33 +66,18 @@ a {
   left: 0;
 }
 
-.main-header {
- min-height: 500px;
- background-image:
- url("../img/intro-welcome.svg"),
- url("../img/intro-mask.svg"),
- url("../img/main.jpg");
- background-size:
- 456px 353px,
- 1201px 59px,
- 1200px 800px;
- background-repeat:
- no-repeat,
- no-repeat,
- no-repeat;
- background-position:
- center,
- bottom;
-}
-
 .nav-list a,
 .site-menu a{
   color: #000000;
-  padding-top: 22px;
 }
 
 .nav-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
   padding-bottom: 22px;
+  padding-left: 72px;
+  padding-right: 72px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -68,68 +85,127 @@ a {
   background-color: #fff;
 }
 
+
 .nav-item a[href]:hover {
   color: #e5f1fa;
 }
 
 .nav-item a[href]:active {
- color: #d3d3d3;
+  color: #d3d3d3;
 }
 
- a:not([href]) {
+a:not([href]) {
   color: #8a7a6f;;
   font-weight: 700;
 }
 
-.introduction {
-  text-align: center;
-}
+.main-header {
+  margin: 0;
+  padding: 0;
+  min-height: 773px;
+  background-image:
+  url("../img/intro-welcome.svg"),
+  url("../img/intro-mask.svg"),
+  url("../img/main.jpg");
+  background-size:
+  456px 353px,
+  1201px 59px,
+  1200px 800px;
+  background-repeat:
+  no-repeat,
+  no-repeat,
+  no-repeat;
+  background-position:
+ center,
+ center 518px;
+ }
+
+
+ .introduction {
+   width: 100%;
+   min-height: 216px;
+   margin-top: 510px;
+   padding-top: 60px;
+   background-color: #fff;
+ }
+
 
 .introduction h2  {
   font-size: 21px;
   font-weight: bold;
-  line-height: 1.23;
-  padding-top: 61px;
-  padding-bottom: 38px;
+  line-height: 1.2px;
+  padding-bottom: 36px;
 }
 
-.filled-text {
-  background-color: #82b4d3;
-  color: #fff;
+
+.container-padded {
+  padding-right: 72px;
+  padding-left: 72px;
 }
 
-.about-sedona {
-  list-style: none;
-  background-color: #eeeeef;
-
-}
-
-.about-sedona,
-.filled-text {
+.col-one-third {
   width: 400px;
+}
+
+.col-two-thirds {
+  width: 800px;
+}
+
+.last-col {
+  background-color: #efefef;
+  padding: 50px 69px 64px;
+}
+
+.full-width {
+  width: 1200px;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.text-center {
   text-align: center;
 }
 
-.features h3 {
+.features-list,
+.inner-list,
+.recommendation-list,
+.filled-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list {
+  flex-wrap: wrap;
+}
+
+.features-list h3 {
   font-size: 21px;
   font-weight: bold;
 }
 
-.recomended-item {
-  list-style: none;
+.filled-text {
+  height: 256px;
+  background-color: #81b3d2;
+  color: #fff;
+}
+
+.filled-text img {
+  display: block;
+}
+
+.filled-text-inner {
+  padding: 45px 40px 65px;;
 }
 
 
-.recomendation {
-  background:
-   url("../img/icon-1.svg") no-repeat,
-   url("../img/icon-2.svg") no-repeat,
-   url("../img/icon-3.svg") no-repeat;
-}
-
-.view,
-.bridge {
-  width: 800px;
+.recommended-item {
+  padding-top: 60px;
+  padding-bottom: 85px;
+  background-size: 72px 75px;
 }
 
 .interest {
@@ -149,13 +225,20 @@ a {
 }
 
 .main-footer {
-margin-top: 138px;
-background-color: rgb(249, 251, 246);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-top: 138px;
 }
 
 .footer-container {
+  width: 100%;
+  position: absolute;
+  bottom:5px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  background-color: rgba(249, 250, 246, 0.9);
 }
 
 .hashtag  {
@@ -170,21 +253,79 @@ background-color: rgb(249, 251, 246);
 .footer-social {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
 
 }
 
 .footer-social a {
-  width: 150px;
-  background:
-  url("../img/twitter.svg") no-repeat,
-  url("../img/facebook.svg") no-repeat,
-  url("../img/youtube.svg") no-repeat;
-  background-size: 17px 15px;
+text-align: center;
   background-color: #82b5d3;
-
 }
+
+.social {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  border-radius: 2px;
+}
+
+.social-t {
+  background: url("../img/t.svg") no-repeat;
+  background-size: 17px 15px;
+  padding: 13px 17px;
+}
+
+.social-f {
+  background:url("../img/fb-icon.svg") no-repeat;
+  background-size: 17px 15px;
+}
+
+.social-youtube {
+  background: url("../img/youtube.svg") no-repeat;
+  background-size: 17px 15px;
+}
+
+.modal h2 {
+  font-size: 21px;
+  line-height: 1.24;
+  background-color: #766356;
+  color: #fff;
+
+  margin-top: 0;
+  padding-top: 35px;
+  padding-bottom: 33px;
+  text-align: center;
+}
+
+.modal {
+  width: 568px;
+  min-height: 395px;
+  margin-bottom: 78px;
+  position: absolute;
+  top:-96px;
+  left: 300px;
+  background-color: #fff;
+  box-shadow:rgba(0, 1, 1, 0.15);
+}
+
+.hotel-search {
+  font-size: 14px;
+  line-height: 1.82;
+  font-weight: bold;;
+}
+
+.button-find {
+ width: 458px;
+ height: 58px;
+ background-color: #81b3d2;
+ color: #fff;
+ font-size: 21px;
+ font-weight: bold;
+ margin: 282px 55px 55px;
+}
+
 
 
 
@@ -196,12 +337,15 @@ background-color: rgb(249, 251, 246);
   min-height: 500px;
 }
 
-.visually-hidden {
-  visibility: hidden;
+.forms,
+.form-items  {
+  display: flex;
+  color: #fff;
 }
 
-.forms {
-  color: #fff;
+fieldset {
+
+  border: 0 none;
 }
 
 .price {
@@ -213,23 +357,18 @@ background-color: rgb(249, 251, 246);
   list-style: none;
 }
 
- a[href]:hover,
- a[href]:active{
+a[href]:hover,
+a[href]:active{
   color: #b3d0e2;
 }
 
-.main-content {
-  background-color: pink;
-}
-
-.hotels {
-  margin-left: 72px;
+.sort-type {
+  display: flex;
+  padding-left: 236px;
 }
 
 .sorting {
-  list-style: none;
-  display: inline-block;
-
+  display: inline;
 }
 
 .sort-type p {
@@ -243,8 +382,7 @@ background-color: rgb(249, 251, 246);
 
   font-size: 12px;
   padding-top: 41px;
-  margin-left: 33px;
-  margin-right: 33px;
+  margin-left: 40px;
 }
 
 .sorting a:hover {
@@ -256,20 +394,15 @@ background-color: rgb(249, 251, 246);
   color:#000;
 }
 
+.arrows,
+.sorting {
+  list-style: none;
+}
+
 .option {
   background-size: 16px;
   line-height: 1.3;
   font-weight: bold;
-}
-
-.details {
-background-color: #82b4d3;
-color: #000000;
-}
-
-.booking {
-background-color: #776356;
-color: #000000;
 }
 
 .result-button {
@@ -277,6 +410,7 @@ color: #000000;
   background-color: transparent;
   border: 1px solid white;
   width: 133px;
+  height: 32px;
 }
 
 .result-button:hover {
@@ -284,20 +418,74 @@ color: #000000;
   background-color: #fff;
 }
 
-.hotels a {
-  color: #000;
-}
-
-.hotels {
+.hotel-item,
+.hotel-item-content {
   display: flex;
-  flex-direction: column;
-  margin-top: 30px;
 }
 
-.amara,
-.desertquailinn,
-.villas {
-  background-image: url("../img/invalid-name.svg");
-  background-repeat: no-repeat;
+.hotel-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #e5e5e5;
+}
 
+.hotel-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-item img {
+  width: 135px;
+}
+
+.hotel-item-content {
+  flex-grow: 1;
+}
+
+.hotel-item-ranking {
+  margin-left: auto;
+}
+
+.hotel-item-description {
+  flex-grow: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.hotel-item-title {
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.24;
+}
+
+.hotel-item-price {
+  margin-top: .9em;
+  margin-bottom: .9em;
+}
+
+.hotel-item-price span {
+  margin-left: 35px;
+}
+
+
+mark {
+  color: #666666;
+  background-color: #f2f3f3;
+  padding: 5px  13px 6px 16px;
+}
+
+.details {
+  background-color: #82b4d3;
+  color: #fff;
+  padding: 8px 17px;
+  margin-right: 6px;
+}
+
+.booking {
+  background-color: #776356;
+  color: #fff;
+  padding: 8px 16px;
+}
+
+.footer-inner {
+  background-color: #fff;
 }
