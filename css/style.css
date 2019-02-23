@@ -404,6 +404,10 @@ a {
   padding-top: 40px;
 }
 
+.hotel-search input {
+  height: 38px;
+}
+
 .calendar {
   background-image: url("../img/calendar-1.svg");
   background-repeat: no-repeat;
@@ -443,9 +447,9 @@ a {
 
 
 
-.number-item input {
+.number input {
   width: 38px;
-  position: relative;
+  padding-left: 14px;
 }
 
 .adults label {
@@ -453,35 +457,57 @@ a {
 }
 
 .kids {
-  margin-left: 155px;
+  margin-left: 50px;
 }
 
 .kids label {
   margin-right: 14px;
 }
 
+.btn-plus-minus {
+  width: 38px;
+  height: 38px;
+  padding-bottom: 10px;
 
-.number input::before,
-.number input::after {
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+
+.plus::before,
+.plus::after {
   content: "";
 
   position: absolute;
-
-  width: 19px;
+  top: 15px;
+  left: 9px;
+  width: 11px;
   height: 3px;
 
-  background-color: #d0d0d0;
+  background-color: #aaaaaa;
+
 }
 
-.number input::before {
-  transform: rotate(45deg);
+.plus::before {
+  transform: rotate(90deg);
 }
 
-.number::after {
-  transform: rotate(-45deg);
+.plus::after {
+  transform: rotate(0deg);
 }
 
+.minus::before,
+.minus::after {
+  content: "";
 
+  position: absolute;
+  top: 10;
+  left: 10px;
+  width: 12px;
+  height: 3px;
+
+  background-color: #aaaaaa;
+}
 
 .button-find {
   margin: 0;

@@ -106,14 +106,19 @@
               <input class="calendar" type="text" value="" id="check-out" name="dateout" placeholder="4 июля 2017">
               <span class="visually-hidden">Выбрать дату</span>
             </p>
+
             <p class=" number adults">
               <label for="adult">Взрослые:</label>
-              <input type="number" name="adult" id="adults" value="" placeholder="2" min="0" max="100">
+                <button class="minus btn-plus-minus" type="submit"></button>
+              <input type="text" name="adult" id="adults" value="" placeholder="2" min="0" max="100">
+              <button class="plus btn-plus-minus" type="button"></button>
             </p>
+
             <p class="number kids">
               <label for="child"> Дети:</label>
-              <input type="number" name="child" id="child" value="" min="0" max="100" placeholder="0">
-            <span class="plus"></span>
+              <button class="minus btn-plus-minus" type="button"></button>
+              <input type="text" name="child" id="child" value="" min="0" max="100" placeholder="0">
+           <button class="plus btn-plus-minus" type="submit"></button>
             </p>
             <button class="button-find" type="submit">Найти</button>
             </form>
