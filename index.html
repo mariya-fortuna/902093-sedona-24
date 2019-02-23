@@ -99,20 +99,21 @@
             <p class="search-item">
               <label for="check-in">Дата заезда:</label>
               <span class="visually-hidden">Выбрать дату</span>
-            <input type="text" value="" id="check-in" name="datein" placeholder="24 апреля 2017"><br>
+            <input class="calendar" type="text" value="" id="check-in" name="datein" placeholder="24 апреля 2017"><br>
             </p>
             <p class="search-item">
-              <label for="check-out">Дата заезда:</label>
-              <input type="text" value="" id="check-out" name="dateout" placeholder="4 июля 2017">
+              <label for="check-out">Дата Выезда:</label>
+              <input class="calendar" type="text" value="" id="check-out" name="dateout" placeholder="4 июля 2017">
               <span class="visually-hidden">Выбрать дату</span>
             </p>
-            <p class="number adults">
+            <p class=" number adults">
               <label for="adult">Взрослые:</label>
               <input type="number" name="adult" id="adults" value="" placeholder="2" min="0" max="100">
             </p>
             <p class="number kids">
               <label for="child"> Дети:</label>
               <input type="number" name="child" id="child" value="" min="0" max="100" placeholder="0">
+            <span class="plus"></span>
             </p>
             <button class="button-find" type="submit">Найти</button>
             </form>

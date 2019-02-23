@@ -404,13 +404,14 @@ a {
   padding-top: 40px;
 }
 
-.search-item input{
-  background-image: url("../img/calendar.svg");
+.calendar {
+  background-image: url("../img/calendar-1.svg");
   background-repeat: no-repeat;
   background-position: 310px;
 }
 
-.hotel-search input {
+.hotel-search input[type="text"],
+.hotel-search input[type="number"] {
   background-color: #f2f2f2;
   font-size: inherit;
   color: #000;
@@ -433,14 +434,18 @@ a {
 
 .search-item label{
     margin-right: 15px;
-}
+  }
 
 .search-item input {
   width: 346px;
+  padding-left: 13px;
 }
 
+
+
 .number-item input {
-  width: 120px;
+  width: 38px;
+  position: relative;
 }
 
 .adults label {
@@ -453,6 +458,27 @@ a {
 
 .kids label {
   margin-right: 14px;
+}
+
+
+.number input::before,
+.number input::after {
+  content: "";
+
+  position: absolute;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: #d0d0d0;
+}
+
+.number input::before {
+  transform: rotate(45deg);
+}
+
+.number::after {
+  transform: rotate(-45deg);
 }
 
 
