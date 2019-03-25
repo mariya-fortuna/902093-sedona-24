@@ -352,6 +352,7 @@ a {
 }
 
 .main-footer iframe {
+  border: 0;
   background-color: #b9dd94;
 }
 
