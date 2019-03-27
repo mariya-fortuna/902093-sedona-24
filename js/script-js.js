@@ -1,3 +1,4 @@
+
 var link = document.querySelector(".hotel-link");
 
 var popup=document.querySelector(".modal-search");

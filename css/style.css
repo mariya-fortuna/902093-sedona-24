@@ -10,7 +10,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -18,6 +17,13 @@ body {
   background-color: #eeeeee;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+  box-shadow:  0 1px 4px rgba(0,0,0,.2),
+  -23px 0 20px -23px rgba(0,0,0,.2),
+  0 0 40px  rgba(0,0,0,.1) inset;
+}
 
 a {
   text-decoration: none;
@@ -195,6 +201,7 @@ a {
   background-color: #fff;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
@@ -206,6 +213,7 @@ a {
 }
 
 .recommended-item {
+
   margin: 0;
   padding-top:  120px;
   background-size: 72px 75px;
@@ -361,6 +369,7 @@ a {
   width: 100%;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   position: absolute;
@@ -430,9 +439,7 @@ a {
   fill: #91c3e0;
 }
 
-.modal-search {
-  display: none;
-}
+
 
 .hotel-link-button {
   margin-top: 0;
@@ -462,9 +469,6 @@ a {
 }
 
 
-.form-show {
-  display: block;
-}
 
 .modal {
   margin: 0;
@@ -928,62 +932,55 @@ a {
   margin: 0;
   padding-bottom: 28px;
   padding-top: 32px;
-
   display: flex;
   list-style: none;
 }
-
 .sort-items {
   margin: 0;
   margin-left: -32px;
-
   display: flex;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .sort-type p {
   margin: 0;
   padding-left: 4px;
   padding-top: 4px;
-
   line-height: 1.5;
   font-size: 12px;
 }
-
 .sorting {
-
   padding-left: 32px;
-
 }
-
 .sort-items a{
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #b2d1e3;
-
   font-size: 12px;
-
 }
-
 .sorting a:hover,
 .sorting a:focus {
   color: #82b5d3;
   border-bottom: 1px dotted #b2d1e3;
 }
-
 .sorting a:active {
   color:#000;
   border: none;
 }
-
 .arrows,
 .sorting {
   list-style: none;
 }
 
+.sort-type a.active {
+  color: #82b5d3;
+  border: none;
+}
+
+
 .arrows {
   display: inline-flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-left: auto;
   margin-right: 73px;
@@ -1002,6 +999,9 @@ a {
   fill:#000;
 }
 
+.active svg{
+  fill: #82b5d3;
+}
 .arrows-filter svg:active {
   fill: #8abcd8;
 }
